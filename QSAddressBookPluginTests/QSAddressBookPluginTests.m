@@ -1,11 +1,3 @@
-//
-//  QSAddressBookPluginTests.m
-//  QSAddressBookPluginTests
-//
-//  Created by Danie Roux on 2012/05/02.
-//  Copyright 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import "QSAddressBookPluginTests.h"
 
 @implementation QSAddressBookPluginTests

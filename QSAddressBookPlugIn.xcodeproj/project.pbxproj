@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		730CF8331551B9B400C40440 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FC134E1545507600956087 /* Cocoa.framework */; };
-		730CF83D1551B9B500C40440 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 730CF83B1551B9B500C40440 /* InfoPlist.strings */; };
 		730CF83F1551B9B500C40440 /* QSAddressBookPluginTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 730CF83E1551B9B500C40440 /* QSAddressBookPluginTests.h */; };
 		730CF8411551B9B500C40440 /* QSAddressBookPluginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 730CF8401551B9B500C40440 /* QSAddressBookPluginTests.m */; };
 		730CF84A1551BA1200C40440 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730CF8491551BA1200C40440 /* AddressBook.framework */; };
@@ -38,10 +37,8 @@
 /* Begin PBXFileReference section */
 		730CF8301551B9B400C40440 /* QSAddressBookPluginTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSAddressBookPluginTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		730CF83A1551B9B500C40440 /* QSAddressBookPluginTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QSAddressBookPluginTests-Info.plist"; sourceTree = "<group>"; };
-		730CF83C1551B9B500C40440 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		730CF83E1551B9B500C40440 /* QSAddressBookPluginTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSAddressBookPluginTests.h; sourceTree = "<group>"; };
 		730CF8401551B9B500C40440 /* QSAddressBookPluginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSAddressBookPluginTests.m; sourceTree = "<group>"; };
-		730CF8421551B9B500C40440 /* QSAddressBookPluginTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QSAddressBookPluginTests-Prefix.pch"; sourceTree = "<group>"; };
 		730CF8491551BA1200C40440 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		730CF84B1551BA1800C40440 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		730CF84D1551BA6000C40440 /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,13 +87,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		730CF8341551B9B400C40440 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
 		730CF8381551B9B500C40440 /* QSAddressBookPluginTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,21 +101,26 @@
 			isa = PBXGroup;
 			children = (
 				730CF83A1551B9B500C40440 /* QSAddressBookPluginTests-Info.plist */,
-				730CF83B1551B9B500C40440 /* InfoPlist.strings */,
-				730CF8421551B9B500C40440 /* QSAddressBookPluginTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		73FC133F1545507500956087 = {
+		730CF8531551C07D00C40440 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				730CF84D1551BA6000C40440 /* QSCore.framework */,
 				730CF84B1551BA1800C40440 /* SenTestingKit.framework */,
 				730CF8491551BA1200C40440 /* AddressBook.framework */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		73FC133F1545507500956087 = {
+			isa = PBXGroup;
+			children = (
 				73FC13501545507600956087 /* QSAddressBookPlugin */,
-				73FC13561545507600956087 /* Configuration */,
 				730CF8381551B9B500C40440 /* QSAddressBookPluginTests */,
+				73FC13561545507600956087 /* Configuration */,
 				73FC134D1545507500956087 /* Frameworks */,
 				73FC134C1545507500956087 /* Products */,
 			);
@@ -144,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				73FC134E1545507600956087 /* Cocoa.framework */,
-				730CF8341551B9B400C40440 /* Other Frameworks */,
+				730CF8531551C07D00C40440 /* Tests */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -258,7 +253,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				730CF83D1551B9B500C40440 /* InfoPlist.strings in Resources */,
 				730CF83F1551B9B500C40440 /* QSAddressBookPluginTests.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,17 +328,6 @@
 			targetProxy = 730CF8471551BA0100C40440 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		730CF83B1551B9B500C40440 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				730CF83C1551B9B500C40440 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		730CF8431551B9B500C40440 /* Debug */ = {
