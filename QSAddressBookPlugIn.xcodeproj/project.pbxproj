@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		730CF8331551B9B400C40440 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FC134E1545507600956087 /* Cocoa.framework */; };
+		730CF83D1551B9B500C40440 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 730CF83B1551B9B500C40440 /* InfoPlist.strings */; };
+		730CF83F1551B9B500C40440 /* QSAddressBookPluginTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 730CF83E1551B9B500C40440 /* QSAddressBookPluginTests.h */; };
+		730CF8411551B9B500C40440 /* QSAddressBookPluginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 730CF8401551B9B500C40440 /* QSAddressBookPluginTests.m */; };
+		730CF84A1551BA1200C40440 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730CF8491551BA1200C40440 /* AddressBook.framework */; };
+		730CF84C1551BA1800C40440 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730CF84B1551BA1800C40440 /* SenTestingKit.framework */; };
+		730CF84E1551BA6000C40440 /* QSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730CF84D1551BA6000C40440 /* QSCore.framework */; };
+		730CF84F1551BA8700C40440 /* ABPerson_Display.m in Sources */ = {isa = PBXBuildFile; fileRef = 738075BF1545E10B00D22E1E /* ABPerson_Display.m */; };
+		730CF8501551BA8700C40440 /* QSABMimicActionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 738075C21545E10B00D22E1E /* QSABMimicActionProvider.m */; };
+		730CF8511551BA8700C40440 /* QSABSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 738075C41545E10B00D22E1E /* QSABSource.m */; };
+		730CF8521551BA8700C40440 /* QSObject_ContactHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 738075C61545E10B00D22E1E /* QSObject_ContactHandling.m */; };
 		738075C71545E10B00D22E1E /* ABPerson_Display.m in Sources */ = {isa = PBXBuildFile; fileRef = 738075BF1545E10B00D22E1E /* ABPerson_Display.m */; };
 		738075C81545E10B00D22E1E /* QSABMimicActionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 738075C21545E10B00D22E1E /* QSABMimicActionProvider.m */; };
 		738075C91545E10B00D22E1E /* QSABSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 738075C41545E10B00D22E1E /* QSABSource.m */; };
@@ -14,7 +25,26 @@
 		73FC134F1545507600956087 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FC134E1545507600956087 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		730CF8471551BA0100C40440 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73FC13411545507500956087 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73FC134A1545507500956087;
+			remoteInfo = QSAddressBookPlugin;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		730CF8301551B9B400C40440 /* QSAddressBookPluginTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSAddressBookPluginTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		730CF83A1551B9B500C40440 /* QSAddressBookPluginTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QSAddressBookPluginTests-Info.plist"; sourceTree = "<group>"; };
+		730CF83C1551B9B500C40440 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		730CF83E1551B9B500C40440 /* QSAddressBookPluginTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSAddressBookPluginTests.h; sourceTree = "<group>"; };
+		730CF8401551B9B500C40440 /* QSAddressBookPluginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSAddressBookPluginTests.m; sourceTree = "<group>"; };
+		730CF8421551B9B500C40440 /* QSAddressBookPluginTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QSAddressBookPluginTests-Prefix.pch"; sourceTree = "<group>"; };
+		730CF8491551BA1200C40440 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		730CF84B1551BA1800C40440 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		730CF84D1551BA6000C40440 /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		738075BE1545E10B00D22E1E /* ABPerson_Display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABPerson_Display.h; sourceTree = SOURCE_ROOT; };
 		738075BF1545E10B00D22E1E /* ABPerson_Display.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABPerson_Display.m; sourceTree = SOURCE_ROOT; };
 		738075C01545E10B00D22E1E /* ABTelephony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABTelephony.h; sourceTree = SOURCE_ROOT; };
@@ -38,6 +68,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		730CF82C1551B9B400C40440 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730CF84E1551BA6000C40440 /* QSCore.framework in Frameworks */,
+				730CF84C1551BA1800C40440 /* SenTestingKit.framework in Frameworks */,
+				730CF84A1551BA1200C40440 /* AddressBook.framework in Frameworks */,
+				730CF8331551B9B400C40440 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73FC13471545507500956087 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,11 +90,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		730CF8341551B9B400C40440 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		730CF8381551B9B500C40440 /* QSAddressBookPluginTests */ = {
+			isa = PBXGroup;
+			children = (
+				730CF83E1551B9B500C40440 /* QSAddressBookPluginTests.h */,
+				730CF8401551B9B500C40440 /* QSAddressBookPluginTests.m */,
+				730CF8391551B9B500C40440 /* Supporting Files */,
+			);
+			path = QSAddressBookPluginTests;
+			sourceTree = "<group>";
+		};
+		730CF8391551B9B500C40440 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				730CF83A1551B9B500C40440 /* QSAddressBookPluginTests-Info.plist */,
+				730CF83B1551B9B500C40440 /* InfoPlist.strings */,
+				730CF8421551B9B500C40440 /* QSAddressBookPluginTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		73FC133F1545507500956087 = {
 			isa = PBXGroup;
 			children = (
+				730CF84D1551BA6000C40440 /* QSCore.framework */,
+				730CF84B1551BA1800C40440 /* SenTestingKit.framework */,
+				730CF8491551BA1200C40440 /* AddressBook.framework */,
 				73FC13501545507600956087 /* QSAddressBookPlugin */,
 				73FC13561545507600956087 /* Configuration */,
+				730CF8381551B9B500C40440 /* QSAddressBookPluginTests */,
 				73FC134D1545507500956087 /* Frameworks */,
 				73FC134C1545507500956087 /* Products */,
 			);
@@ -63,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				73FC134B1545507500956087 /* QSAddressBookPlugin.qsplugin */,
+				730CF8301551B9B400C40440 /* QSAddressBookPluginTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				73FC134E1545507600956087 /* Cocoa.framework */,
+				730CF8341551B9B400C40440 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +193,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		730CF82F1551B9B400C40440 /* QSAddressBookPluginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 730CF8451551B9B500C40440 /* Build configuration list for PBXNativeTarget "QSAddressBookPluginTests" */;
+			buildPhases = (
+				730CF82B1551B9B400C40440 /* Sources */,
+				730CF82C1551B9B400C40440 /* Frameworks */,
+				730CF82D1551B9B400C40440 /* Resources */,
+				730CF82E1551B9B400C40440 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				730CF8481551BA0100C40440 /* PBXTargetDependency */,
+			);
+			name = QSAddressBookPluginTests;
+			productName = QSAddressBookPluginTests;
+			productReference = 730CF8301551B9B400C40440 /* QSAddressBookPluginTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		73FC134A1545507500956087 /* QSAddressBookPlugin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73FC136C1545507600956087 /* Build configuration list for PBXNativeTarget "QSAddressBookPlugin" */;
@@ -142,7 +235,7 @@
 /* Begin PBXProject section */
 		73FC13411545507500956087 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 73FC13441545507500956087 /* Build configuration list for PBXProject "QSAddressBookPlugIn" */;
+			buildConfigurationList = 73FC13441545507500956087 /* Build configuration list for PBXProject "QSAddressBookPlugin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -155,11 +248,21 @@
 			projectRoot = "";
 			targets = (
 				73FC134A1545507500956087 /* QSAddressBookPlugin */,
+				730CF82F1551B9B400C40440 /* QSAddressBookPluginTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		730CF82D1551B9B400C40440 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730CF83D1551B9B500C40440 /* InfoPlist.strings in Resources */,
+				730CF83F1551B9B500C40440 /* QSAddressBookPluginTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73FC13481545507500956087 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,6 +273,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		730CF82E1551B9B400C40440 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 		73FC13491545507500956087 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +302,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		730CF82B1551B9B400C40440 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730CF84F1551BA8700C40440 /* ABPerson_Display.m in Sources */,
+				730CF8501551BA8700C40440 /* QSABMimicActionProvider.m in Sources */,
+				730CF8511551BA8700C40440 /* QSABSource.m in Sources */,
+				730CF8521551BA8700C40440 /* QSObject_ContactHandling.m in Sources */,
+				730CF8411551B9B500C40440 /* QSAddressBookPluginTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73FC13461545507500956087 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,7 +327,85 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		730CF8481551BA0100C40440 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73FC134A1545507500956087 /* QSAddressBookPlugin */;
+			targetProxy = 730CF8471551BA0100C40440 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		730CF83B1551B9B500C40440 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				730CF83C1551B9B500C40440 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		730CF8431551B9B500C40440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(QS_BUILD_ROOT)/Configuration/Quicksilver.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				INFOPLIST_FILE = "QSAddressBookPluginTests/QSAddressBookPluginTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		730CF8441551B9B500C40440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(QS_BUILD_ROOT)/Configuration/Quicksilver.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				INFOPLIST_FILE = "QSAddressBookPluginTests/QSAddressBookPluginTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		73FC136A1545507600956087 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73FC13581545507600956087 /* Debug.xcconfig */;
@@ -233,7 +439,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		73FC13441545507500956087 /* Build configuration list for PBXProject "QSAddressBookPlugIn" */ = {
+		730CF8451551B9B500C40440 /* Build configuration list for PBXNativeTarget "QSAddressBookPluginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				730CF8431551B9B500C40440 /* Debug */,
+				730CF8441551B9B500C40440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		73FC13441545507500956087 /* Build configuration list for PBXProject "QSAddressBookPlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73FC136A1545507600956087 /* Debug */,
