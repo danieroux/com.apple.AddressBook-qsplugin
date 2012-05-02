@@ -3,4 +3,9 @@
 
 @interface QSAddressBookPluginTests : SenTestCase
 
+- (void)testImObjects;
+
+- (void)createNewTestPersonWithMiddleName:(NSString *)middleName;
+- (void)setupJabberAndSkype;
+
 @end

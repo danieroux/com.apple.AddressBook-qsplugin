@@ -121,18 +121,20 @@
 }
 
 + (NSArray *)imObjectsForPerson:(ABPerson *)person asChild:(BOOL)asChild {
-	NSArray *imTypes = [NSArray arrayWithObjects:kABAIMInstantProperty, kABJabberInstantProperty, kABMSNInstantProperty, kABYahooInstantProperty, kABICQInstantProperty, nil];
     NSMutableArray *contactlings = [NSMutableArray arrayWithCapacity:1];
-	for(NSString * type in imTypes) {
-		ABMultiValue *ims = [person valueForProperty:type];
-		int i;
-		for (i = 0; i < [ims count]; i++) {
-			NSString *name = [self contactlingNameForPerson:person label:ABLocalizedPropertyOrLabel([ims labelAtIndex:i]) type:ABLocalizedPropertyOrLabel(type) asChild:asChild];
-			QSObject *obj = [QSObject objectWithString:[ims valueAtIndex:i] name:name type:QSIMAccountType];
-            [obj setParentID:[person uniqueId]];
-            [contactlings addObject:obj];
-		}
-	}
+    ABMultiValue *ims = [person valueForProperty: kABInstantMessageProperty];
+    
+    for (int i = 0; i < [ims count]; i++) {
+        NSDictionary *im = [ims valueAtIndex: i];
+        NSString *name = [self contactlingNameForPerson:person 
+                                                  label:ABLocalizedPropertyOrLabel([ims labelAtIndex: i])
+                                                   type:ABLocalizedPropertyOrLabel([im objectForKey: kABInstantMessageServiceKey]) 
+                                                asChild:asChild];
+        QSObject *obj = [QSObject objectWithString:[im objectForKey: kABInstantMessageUsernameKey] name:name type:QSIMAccountType];
+        [obj setParentID:[person uniqueId]];
+        [contactlings addObject:obj];
+    }
+    
 	return contactlings;
 }
 
