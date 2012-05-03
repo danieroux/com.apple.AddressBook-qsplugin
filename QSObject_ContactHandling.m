@@ -120,6 +120,23 @@
 	return contactlings;
 }
 
+#if MAX_OS_X_VERSION_MAX_ALLOWED <= MAX_OS_X_VERSION_10_6
++ (NSArray *)imObjectsForPerson:(ABPerson *)person asChild:(BOOL)asChild {
+    NSArray *imTypes = [NSArray arrayWithObjects:kABAIMInstantProperty, kABJabberInstantProperty, kABMSNInstantProperty, kABYahooInstantProperty, kABICQInstantProperty, nil];
+    NSMutableArray *contactlings = [NSMutableArray arrayWithCapacity:1];
+    for(NSString * type in imTypes) {
+        ABMultiValue *ims = [person valueForProperty:type];
+        int i;
+        for (i = 0; i < [ims count]; i++) {
+            NSString *name = [self contactlingNameForPerson:person label:ABLocalizedPropertyOrLabel([ims labelAtIndex:i]) type:ABLocalizedPropertyOrLabel(type) asChild:asChild];
+            QSObject *obj = [QSObject objectWithString:[ims valueAtIndex:i] name:name type:QSIMAccountType];
+            [obj setParentID:[person uniqueId]];
+            [contactlings addObject:obj];
+        }
+    }
+	return contactlings;
+}
+#else
 + (NSArray *)imObjectsForPerson:(ABPerson *)person asChild:(BOOL)asChild {
     NSMutableArray *contactlings = [NSMutableArray arrayWithCapacity:1];
     ABMultiValue *ims = [person valueForProperty: kABInstantMessageProperty];
@@ -137,6 +154,7 @@
     
 	return contactlings;
 }
+#endif
 
 - (BOOL)loadChildrenForObject:(QSObject *)object {
     ABPerson *person = (ABPerson *)[[ABAddressBook sharedAddressBook] recordForUniqueId:[object objectForType:@"ABPeopleUIDsPboardType"]];

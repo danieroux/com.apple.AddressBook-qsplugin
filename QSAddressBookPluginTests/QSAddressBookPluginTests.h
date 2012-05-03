@@ -7,5 +7,6 @@
 
 - (void)createNewTestPersonWithMiddleName:(NSString *)middleName;
 - (void)setupJabberAndSkype;
+- (bool)usingNewInstantMessageAPI;
 
 @end
